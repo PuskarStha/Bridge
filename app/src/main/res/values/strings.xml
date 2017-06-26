@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Bridge</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_help">help</string>
+</resources>

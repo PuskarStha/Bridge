@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:srcCompat="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:id="@+id/logo1" />
+
+    <TextView
+        android:text="User Name"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/logo1"
+        android:layout_marginTop="35dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_below="@+id/username"
+        android:layout_alignStart="@+id/username"
+        android:layout_marginTop="8dp"
+        android:id="@+id/namefield" />
+
+
+
+    <TextView
+        android:text="Password"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Password"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/namefield"
+        android:layout_alignStart="@+id/username"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:id="@+id/passwordfield"
+        android:layout_below="@+id/Password"
+        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/Password"/>
+
+    <Button
+        android:text="Log in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordfield"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:onClick="onButtonClick"
+        android:id="@+id/Login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Create New Account"
+        android:layout_below="@+id/Login"
+        android:layout_alignEnd="@+id/logo1"
+        android:layout_marginTop="60dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_alignStart="@+id/username"
+        android:id="@+id/newaccount"
+        android:onClick="registeraccount" />
+    <!--
+        <TextView
+            android:text="Forgot Password?"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newaccount"
+            android:layout_marginTop="16dp"
+            android:layout_alignStart="@+id/username"
+            android:id="@+id/textView" />
+    -->
+    <TextView
+        android:text="Help"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:id="@+id/help"
+        android:onClick="clickHelp"
+        android:layout_below="@+id/newaccount"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="105dp"/>
+    <TextView
+        android:text="Exit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="16dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:id="@+id/exit"
+        android:onClick="clickExit"/>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_helpme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.puskar.bridge.text3">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I can't log in. "
+        android:textSize="24sp"
+        android:lineSpacingExtra="8sp"
+        android:textStyle="normal|bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:id="@+id/text1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" If you're having trouble logging into your Bridge account, here are a few things to try:\n\n
+a) Make sure you have the latest version of the Bridge app.\n\n
+b) Delete the app, then reinstall it.\n\n
+c) Login with your username considering the captions.\n\n
+d) Check your username and password."
+        android:textSize="18dp"
+        android:textColor="@android:color/black"
+        android:textAlignment="textStart"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif"
+
+        android:id="@+id/textView2" />
+
+
+</RelativeLayout>

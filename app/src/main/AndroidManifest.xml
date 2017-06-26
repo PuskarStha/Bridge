@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.puskar.bridge">
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".bridge.TEAMONE"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Firstfeature"/>
+        <activity android:name=".wallpage" />
+        <activity android:name=".wallpage2" />
+        <activity android:name=".formpageone"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".formpagetwo"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".Login"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".home" />
+        <activity android:name=".Help" />
+        <activity android:name=".text1" />
+        <activity android:name=".text2" />
+        <activity android:name=".text3" />
+        <activity android:name=".newaccount"
+            android:windowSoftInputMode="stateHidden"/>
+
+</application>
+
+</manifest>

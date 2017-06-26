@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.puskar.bridge.wallpage">
+
+    <Button
+        android:id="@+id/postemergency"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:onClick="formpage"
+        android:text="    Post emergency help notices???"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/postemergency"
+        android:layout_alignParentStart="true"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_toRightOf="@id/postemergency"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/list_view"
+        android:layout_toStartOf="@+id/postemergency"
+        app:srcCompat="?android:attr/homeAsUpIndicator"
+        android:onClick="backclick"/>
+
+</RelativeLayout>
+

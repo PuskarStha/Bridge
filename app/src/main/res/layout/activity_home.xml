@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    tools:context="com.example.puskar.bridge.home"
+    android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:text="Category:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:textSize="24dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/search"
+        android:id="@+id/Category"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:text="Help Notices"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/Category"
+        android:id="@+id/notice"
+        android:onClick="oneclick"/>
+
+    <TextView
+        android:text="Expert Advice"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_bright"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:id="@+id/advice"
+        android:layout_below="@+id/notice"
+        android:layout_alignStart="@+id/notice"
+        />
+
+    <TextView
+        android:text="Trading"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/black"
+        android:id="@+id/trading"
+        android:layout_below="@+id/advice"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:text="Log out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trading"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:id="@+id/logout"
+        android:onClick="logoutbutton"
+        android:layout_marginBottom="50dp"/>
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" />
+    </RelativeLayout>
+    </ScrollView>

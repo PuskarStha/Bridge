@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.puskar.bridge.wallpage"
+    android:theme="@style/AppTheme">
+
+
+    <Button
+        android:id="@+id/postsimple"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/black"
+        android:onClick="formpage2"
+        android:text="      Post simple help notices???        "
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/postsimple"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/list_view"
+        android:layout_toStartOf="@+id/postsimple"
+        app:srcCompat="?android:attr/homeAsUpIndicator"
+        android:onClick="backclick1"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view"
+        android:layout_below="@+id/postsimple"
+        android:layout_alignParentEnd="true"
+        android:textDirection="firstStrong">
+    </ListView>
+
+</RelativeLayout>
+
